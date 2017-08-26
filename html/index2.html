@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>body label</title>
+</head>
+<body>
+    <p>hello,<br/>spring</p>
+    <p>Today is a fine day. Nice to meet you!</p>
+    <p>1+2&gt;2</p>
+    <p>1&lt;3</p>
+
+    <a href="https://www.baidu.com">春&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;天</a>
+    <!--H标签(加大加粗)-->
+    <h1>Tom</h1>
+
+    <h2>Tom</h2>
+
+    <h3>Tom</h3>
+    <h4>Tom</h4>
+    <h5>Tom</h5>
+    <h6>Tom</h6>
+    <!--span标签（白板）-->
+    <span>guitar</span>
+    <span>music</span>
+    <span>book</span>
+    <!--div标签（白板）-->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <!--标签嵌套-->
+    <div>
+
+        <!-- id用于定位，position用于指定位置
+        右键-》元素审查-》Console窗口：
+            查找
+            document.getElementById('boot').innerText
+            替换
+            document.getElementById('boot').innerText = 'nova boot ironic_26'
+        -->
+        <div id="boot" style="position:fixed;bottom:0;right:0">nova boot xxoo</div>
+        <div id="reboot" style="position:fixed;top:0;left:0">nova reboot xxx</div>
+        <div>nova-api</div>
+        <div>nova-compute</div>
+        <div>nova-scheduler</div>
+        <div>nova-conductor</div>
+    </div>
+</body>
+</html>
