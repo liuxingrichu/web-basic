@@ -43,6 +43,24 @@ web开发三个组成部分：
         标签之间可以嵌套
         标签存在的意思：
             方便定位、操作；CSS操作；JS操作
+        chrome审查元素
+            方便定位和查看样式
+        input系列
+            type="text"     有name、value属性
+            type="password" 有name、value属性 
+            type="button"   有value属性
+            type="submit"   有value属性
+            type="radio"    有value、checked（仅一个）、name属性（name相同则互斥）
+            type="checkbox" 有value、checked（可多个）、name属性（name可用于批量获取数据）
+            type="file"     依赖form表单中的enctype="multipart/form-data"属性
+            type="reset"    重置
+    8 get方法与post方法的区别
+    （1）get方法将输入的内容，填充到url中，url上内看到填写内容，再发放到服务端；
+        post方法将输入内容，填充到body中，再发放到服务端。
+    （2）get方法和post方法传输的内容，都可以通过抓包方式，获取内容，
+        不存在那种方式更安全之说。
+        
+        
         
     需要记忆20个标签左右  
 （2）CSS  衣着

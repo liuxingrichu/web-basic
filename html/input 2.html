@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+</head>
+<body>
+    <!--enctype用于文件传输-->
+    <form enctype="multipart/form-data">
+        <div>
+            <p>用户名</p>
+            <input type="text" name="user"/>
+            <p>choose sex</p>
+            male <input type="radio" name="gender" value="1" checked="checked"/>
+            female <input type="radio" name="gender" value="2"/>
+            <p>choose hobbies</p>
+            basketball <input type="checkbox" name="flavor" value="1"/>
+            football <input type="checkbox" name="flavor" value="2" checked="checked"/>
+            badminton <input type="checkbox" name="flavor" value="3"/>
+            pingpong <input type="checkbox" name="flavor" value="4" checked="checked"/>
+            <p>skill</p>
+            python <input type="checkbox" name="skill" value="1" checked="checked"/>
+            linux <input type="checkbox" name="skill" value="2" checked="checked"/>
+            Java <input type="checkbox" name="skill" value="3"/>
+            C <input type="checkbox" name="skill" value="4"/>
+            <p>上传文件</p>
+            <input type="file" name="fname"/>
+        </div>
+        <input type="submit" value="提交"/>
+        <input type="reset" value="重置"/>
+    </form>
+</body>
+</html>
