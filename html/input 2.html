@@ -8,6 +8,13 @@
     <!--enctype用于文件传输-->
     <form enctype="multipart/form-data">
         <div>
+            <!--下拉框 size 多行显示， multiple 多选-->
+            <select name="city" size="10" multiple="multiple">
+                <option value="1">北京</option>
+                <option value="2" selected="selected">上海</option>
+                <option value="3">深圳</option>
+                <option value="4">香港</option>
+            </select>
             <p>用户名</p>
             <input type="text" name="user"/>
             <p>choose sex</p>
@@ -26,8 +33,12 @@
             <p>上传文件</p>
             <input type="file" name="fname"/>
         </div>
+        <!--多行输入-->
+        <textarea name="menu">this is a default value</textarea>
+        <p></p>
         <input type="submit" value="提交"/>
         <input type="reset" value="重置"/>
+
     </form>
 </body>
 </html>

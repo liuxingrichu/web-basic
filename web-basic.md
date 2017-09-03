@@ -54,6 +54,8 @@ web开发三个组成部分：
             type="checkbox" 有value、checked（可多个）、name属性（name可用于批量获取数据）
             type="file"     依赖form表单中的enctype="multipart/form-data"属性
             type="reset"    重置
+            <textarea>默认值</textarea>    有name属性
+            select标签       有name属性，内部有option value，size多行显示，multiple可选中多行
     8 get方法与post方法的区别
     （1）get方法将输入的内容，填充到url中，url上内看到填写内容，再发放到服务端；
         post方法将输入内容，填充到body中，再发放到服务端。
