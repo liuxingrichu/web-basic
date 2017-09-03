@@ -56,6 +56,10 @@ web开发三个组成部分：
             type="reset"    重置
             <textarea>默认值</textarea>    有name属性
             select标签       有name属性，内部有option value，size多行显示，multiple可选中多行
+        a标签（不提交到后台）
+            使用场景：
+            （1）超链接，实现调转
+            （2）锚，锚点 href="#某标签的ID" 注：标签ID不可重复
     8 get方法与post方法的区别
     （1）get方法将输入的内容，填充到url中，url上内看到填写内容，再发放到服务端；
         post方法将输入内容，填充到body中，再发放到服务端。
