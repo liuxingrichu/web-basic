@@ -60,6 +60,30 @@ web开发三个组成部分：
             使用场景：
             （1）超链接，实现调转
             （2）锚，锚点 href="#某标签的ID" 注：标签ID不可重复
+        img标签属性：
+            src     图片来源
+            title   提示
+            alt     图片找不到时的提示字符
+        列表标签
+            ul  标点模式
+                li 
+            ol  数字模式
+                li 
+            dl
+                dt  标题
+                dd  内容
+        table表格标签
+           thead    表头
+                tr  行
+                    th  列
+           tbody    表内容
+                tr  行
+                    td  列
+           colspan='n'  行内合并n个单元格
+           rowspan='n'  跨行合并n个单元格
+        label标签
+            点击文字时，使关联的id的标签，获取光标
+            一般配合input标签使用 
     8 get方法与post方法的区别
     （1）get方法将输入的内容，填充到url中，url上内看到填写内容，再发放到服务端；
         post方法将输入内容，填充到body中，再发放到服务端。

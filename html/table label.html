@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>主机</td>
+        <td>端口</td>
+        <td>操作</td>
+    </tr>
+    <tr>
+        <td>192.168.100.2</td>
+        <td>8890</td>
+        <td>
+            <a href="index0.html">详情</a>
+            <a href="#">修改</a>
+        </td>
+    </tr>
+    <tr>
+        <td>192.168.0.2</td>
+        <td>22</td>
+        <td>
+            <a href="index0.html">详情</a>
+            <a href="#">修改</a>
+        </td>
+    </tr>
+    <tr>
+        <td>192.168.200.2</td>
+        <td>8890</td>
+        <td>
+            <a href="index0.html">详情</a>
+            <a href="#">修改</a>
+        </td>
+    </tr>
+</table>
+<br />
+<!--规范写法-->
+<table border="1">
+    <thead >
+        <tr>
+            <th>head1</th>
+            <th>head2</th>
+            <th>head3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
