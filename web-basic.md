@@ -24,7 +24,7 @@ web开发三个组成部分：
             <meta http-equiv="X-UA-COMPATIBLE" content="IE=IE9;IE=IE8;"/>
         title标签
         <link />搞图标，欠
-        <style />欠
+        <style /> 见CSS
         <script>欠
     7 body标签
         &nbsp;空格&gt;大于&lt;小于
@@ -45,7 +45,7 @@ web开发三个组成部分：
             方便定位、操作；CSS操作；JS操作
         chrome审查元素
             方便定位和查看样式
-        input系列
+        input系列 + form标签
             type="text"     有name、value属性
             type="password" 有name、value属性 
             type="button"   有value属性
@@ -91,12 +91,46 @@ web开发三个组成部分：
         post方法将输入内容，填充到body中，再发放到服务端。
     （2）get方法和post方法传输的内容，都可以通过抓包方式，获取内容，
         不存在那种方式更安全之说。
-        
-        
-        
-    需要记忆20个标签左右  
+    需要记忆20个标签左右
+    
 （2）CSS  衣着
-    颜色
-    位置
+    颜色、位置
+    编写CSS样式：
+    1. 在标签上，设置style属性
+    2. head标签中，书写style标签
+        -id选择区（不推荐使用）
+            #i1{
+                background-color:red;
+                height: 49px;
+            }
+        - class选择区
+            .名称{
+               ...
+               }
+            <标签 class="名称">xx</标签>
+        - 标签选择器
+            div{
+                ...
+            }
+            所有div标签设置上此样式
+        - 层级选择器(空格)
+           span div .c2{
+                ...
+           }
+        - 组合选择器（逗号）
+            .c1 .c2 .c3{
+                ...
+            }
+        - 属性选择器
+            对选择到的标签，再通过属性进行一次筛选
+        PS：
+            优先级：标签上的style优先，编写顺序，就近原则（下面的先）
+    2.5 css样式也可以写在css文件中
+        <link rel="stylesheet" href="commons.css"/>                   
+    3.注释
+        /*
+        xxx
+        */
+    
 （3）JS   动态属性
 

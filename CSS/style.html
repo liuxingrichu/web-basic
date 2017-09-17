@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS one</title>
+    <style>
+        /*
+        #i1 {
+            background-color:#eeeeee;   rgb颜色对照表
+            height: 49px;
+        }
+        #i2 {
+            background-color: blue;
+            height: 50px;
+        }
+        .c1 {
+            background-color: gold;
+            height: 60px;
+        }
+        */
+        div{
+            background-color: yellow;   /*背景色*/
+            color: orange;              /*字体颜色*/
+        }
+        /*span div{*/
+            /*background-color: blue;*/
+            /*color: red;*/
+        /*}*/
+        #i1,#i2{
+            background-color: gray;
+            color: white;
+        }
+        input[n='haha']{width: 100px;height: 80px}
+    </style>
+</head>
+<body>
+    <div style="background-color:#eeeeee; height: 49px">方式一：无复用性 RGB颜色对照表</div>
+    <div id="i1">方式二：规范情况下，id需要唯一</div>
+    <div id="i2">无复用性</div>
+    <span class="c1">方式三：最常用
+        <div>spring summer autumn winter</div>
+    </span>
+    <input type="text" n="haha"/>
+    <input type="password"/>
+</body>
+</html>
