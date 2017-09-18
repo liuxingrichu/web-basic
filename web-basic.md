@@ -126,11 +126,22 @@ web开发三个组成部分：
         PS：
             优先级：标签上的style优先，编写顺序，就近原则（下面的先）
     2.5 css样式也可以写在css文件中
-        <link rel="stylesheet" href="commons.css"/>                   
+        <link rel="stylesheet" href="commons.css"/>
     3.注释
         /*
         xxx
         */
+    4.边框
+        宽度、样式、颜色（border：4px solid red）
+        左右上下
+    5 常用格式
+        height               高度 
+        width                宽度（像素、百分比）
+        font-size            字体大小 
+        text-align:center    水平方向居中
+        line-height          垂直方法根据标签高度居中
+        font-weight          字体加粗
+        color                字体颜色
     
 （3）JS   动态属性
 
