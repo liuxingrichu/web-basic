@@ -142,6 +142,8 @@ web开发三个组成部分：
         line-height          垂直方法根据标签高度居中
         font-weight          字体加粗
         color                字体颜色
+    6 float
+        可实现标签浮动，块级标签也可以堆叠
     
 （3）JS   动态属性
 
