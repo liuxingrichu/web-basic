@@ -144,6 +144,19 @@ web开发三个组成部分：
         color                字体颜色
     6 float
         可实现标签浮动，块级标签也可以堆叠
+        父标签控制浮动子标签：
+            <div style="clear:both;"></div>
+    7 display
+        display: none;      让标签不显示
+        display: inline;    转行内标签
+        display: block;     转块级标签
+        display: inline-block;
+            标签具备行内标签的属性，同时可以设置高度、宽度、padding、margin
+        *行内标签
+            无法设置高度、宽度、padding、margin
+        *块级标签
+            可设置高度、宽度、padding、margin
+            
     
 （3）JS   动态属性
 
