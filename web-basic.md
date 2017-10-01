@@ -156,7 +156,12 @@ web开发三个组成部分：
             无法设置高度、宽度、padding、margin
         *块级标签
             可设置高度、宽度、padding、margin
-            
+    8 边距padding margin
+        内边距：padding
+        外边距：margin
+        margin: 8px auto    居中，auto是左右，8px为上下
+        margin: auto        上下左右居中
+        
     
 （3）JS   动态属性
 
