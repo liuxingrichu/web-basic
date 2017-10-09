@@ -1,0 +1,21 @@
+.c{
+    text-align: center;
+    margin: 0 auto;
+}
+.c1{
+    height: 20px;
+    background-color: #dddddd;
+    line-height: 20px;
+}
+.c2{
+    height: 60px;
+    line-height: 60px;
+}
+.c3{
+    height: 20px;
+    background-color: red;
+    line-height: 20px;
+}
+img{
+    border: 0;
+}
