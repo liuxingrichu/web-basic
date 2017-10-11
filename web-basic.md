@@ -162,6 +162,33 @@ web开发三个组成部分：
         margin: 8px auto    居中，auto是左右，8px为上下
         margin: auto        上下左右居中
         
-    
+以上内容重点回顾：
+1 块级标签和行内标签
+2 form标签
+    <!--上传文件需要使用multipart/form-data-->
+    <form action="url（提交的地址）" method="get" enctype="multipart/form-data">
+        <div>块级标签</div>
+        <input  type="text" name="q"/>
+        <input type="text" name="b"/>
+        <!--上传文件-->
+        <input type="file" name="f"/>
+    </form>
+    GET：输入内容拼接到url上
+        http://xxx?q=用户输入的值
+        http://xxx?q=用户输入的值&b=用户输入的内容
+    POST：
+        请求头
+        请求内容
+3 display
+    block; inline; inline-block;
+4 float
+    <div>
+        <div style="float:left;">子标签</div>
+        <!--解决子标签，浮动超出父标签的场景-->
+        <div style="clear:both;"><div>
+    </div>
+5 margin: 0 auto;    外边距
+6 padding   内边距（自身发放变化）
+
 （3）JS   动态属性
 
