@@ -190,5 +190,17 @@ web开发三个组成部分：
 5 margin: 0 auto;    外边距
 6 padding   内边距（自身发放变化）
 
+CSS补充：
+1 position
+    fixed
+        作用：固定在页面的某个位置
+    relative + absolute
+        <!--absolute很少单独使用-->
+        <!--单独使用relative，与没使用一样-->
+        <!--relative + absolute 子标签是相对于父标签定位的-->
+        <div style="position:relative;">
+            <div style="position:absolute; left:0; top:0;"></div>
+        </div>
+
 （3）JS   动态属性
 

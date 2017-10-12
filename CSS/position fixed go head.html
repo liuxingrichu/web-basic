@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoTop</title>
+</head>
+<body>
+    <!--position固定在屏幕右下角-->
+    <div onclick="GoTop();" style="background-color:red; width: 60px; height: 60px;
+    position: fixed; bottom: 20px; right: 20px">
+        第二层
+    </div>
+    <div style="height: 1900px; background-color: #dddddd">第一层</div>
+    <!--返回网页顶部-->
+    <script>
+        function GoTop(){
+            document.body.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

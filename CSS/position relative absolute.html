@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>relative + absolute</title>
+</head>
+<body>
+    <!--单独使用relative，与没使用一样-->
+    <!--relative + absolute 子标签是相对于父标签定位的-->
+    <div style="position: relative; width: 500px;height: 200px; border: 1px solid red;margin: 0 auto">
+        <div style="position: absolute; left: 0; bottom: 0;
+        background-color: black;
+        width: 20px; height: 20px;"></div>
+    </div>
+    <div style="position: relative; width: 500px;height: 200px; border: 1px solid red;margin: 0 auto">
+        <div style="position: absolute; right: 0; bottom: 0;
+        background-color: black;
+        width: 20px; height: 20px;"></div>
+    </div>
+    <div style="position: relative; width: 500px;height: 200px; border: 1px solid red;margin: 0 auto">
+        <div style="position: absolute; right: 0; top: 0;
+        background-color: black;
+        width: 20px; height: 20px;"></div>
+    </div>
+</body>
+</html>
