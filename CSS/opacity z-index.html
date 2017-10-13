@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三层演示</title>
+</head>
+<body>
+    <!--z-index 层次显示控制 越大越在前面-->
+    <!--居中显示-->
+    <div style="position: fixed; top: 50%; left: 50%;
+    margin-top: -200px;margin-left: -250px ;
+     width: 500px; height: 400px;background-color: white;
+     z-index: 10;">
+        第三层
+        <br />
+        <span>name</span>
+        <input type="text"/>
+        <br />
+        <span>password</span>
+        <input type="text"/>
+    </div>
+
+    <!--opacity 透明度 0-1，越小越透明-->
+    <div style="position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 9;">
+        第二层
+    </div>
+
+    <div style="height: 9000px; background-color: green;">
+        第一层
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标到，自动变色</title>
+    <style>
+        .pg-header{
+            height: 48px;
+            background-color: blue;
+            margin: 0 auto;
+            line-height: 48px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .pg-body{
+            height: 9800px;
+            margin-top: 50px;
+        }
+        .w{
+            width: 980px;
+            margin: 0 auto;
+        }
+        .pg-header .menu{
+            display: inline-block;
+            /*上 右 下 左（顺时针）*/
+            padding: 0 10px 0 10px;
+            color: white;
+        }
+        /*当鼠标移动到当前标签上是，以下css属性才生效*/
+        .pg-header .menu:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="pg-header">
+        <div class="w">
+            <a class="logo" href="http://dig.chouti.com/">LOGO</a>
+            <a class="menu">全部</a>
+            <a class="menu">段子</a>
+            <a class="menu">42区</a>
+            <a class="menu">1024</a>
+        </div>
+    </div>
+    <div class="pg-body">
+        <div class="w">内部</div>
+    </div>
+</body>
+</html>

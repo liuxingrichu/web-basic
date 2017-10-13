@@ -201,6 +201,15 @@ CSS补充：
         <div style="position:relative;">
             <div style="position:absolute; left:0; top:0;"></div>
         </div>
-
+2 z-index 
+    层次显示顺序控制 越大越在前面
+3 opacity 
+    透明度 0-1，越小越透明 
+4 overflow
+    auto   图片显示相应尺寸，同时带滚动条
+    hidden 图片隐藏，仅显示裁剪的尺寸
+5 hover
+    当鼠标移动到当前标签上时，属性才生效
+    
 （3）JS   动态属性
 
