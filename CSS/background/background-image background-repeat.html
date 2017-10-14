@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景：图片 是否重复</title>
+</head>
+<body>
+    <!--图片作为背景-->
+    <div style="background-image: url('rich.jpg'); height: 800px;
+    border: 1px solid red;"></div>
+    <!--图片重复机制-->
+    <div style="background-image: url('rich.jpg'); height: 500px;
+    border: 1px solid green;
+    background-repeat: no-repeat">
+        不重复
+    </div>
+    <div style="background-image: url('rich.jpg'); height: 500px;
+    border: 1px solid green;
+    background-repeat: repeat-x">
+        x轴方向重复
+    </div>
+    <div style="background-image: url('rich.jpg'); height: 800px;
+    border: 1px solid green;
+    background-repeat: repeat-y">
+        y轴方向重复
+    </div>
+</body>
+</html>

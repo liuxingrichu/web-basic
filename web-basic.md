@@ -210,6 +210,18 @@ CSS补充：
     hidden 图片隐藏，仅显示裁剪的尺寸
 5 hover
     当鼠标移动到当前标签上时，属性才生效
+6 background-image    图片作为背景，默认重复放满标签空间
+    background-image:url('rich.jpg') 图片地址
+7 background-repeat 重复机制
+    repeat-x    x轴方向重复
+    repeat-y    y轴方向重复
+    no-repeat   不重复
+8 background-position   通过移动坐标，显示不同图标
+    background-position-x: 0;       表示x轴
+    background-position-y: -59px;   表示y轴
+    background-position: 0 -59px;   分别表示x轴、y轴
+9 background    简写方式，有利于避免代码重复编写
+    background: red url(chouti.png) 0 -60px no-repeat; 背景色 图标来源 x轴 y轴 不重复 
     
 （3）JS   动态属性
 
