@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跑马灯</title>
+</head>
+<body>
+    <div id="i1">欢迎来到JavaScript世界</div>
+    <script>
+        // JS 函数
+        function func(){
+            // 根据id获取标签
+            var tag = document.getElementById('i1');
+            // 获取标签内部数据
+            var content = tag.innerText;
+            var one = content.charAt(0);
+            var another = content.substring(1, content.length);
+            new_content = another + one;
+            tag.innerText = new_content;
+        }
+        // 定时器
+        setInterval("func();",  500);
+    </script>
+</body>
+</html>

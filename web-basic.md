@@ -224,4 +224,68 @@ CSS补充：
     background: red url(chouti.png) 0 -60px no-repeat; 背景色 图标来源 x轴 y轴 不重复 
     
 （3）JS   动态属性
+    独立的编程语言，而浏览器具有解析js的功能
 
+1 JavaScript代码的存在形式
+    a)html中
+    b)js文件中
+2 JavaScript代码在html文件中的位置
+    a) JavaScript代码最好放在body标签中的最下方（推荐）
+        例如：
+            <body>
+                // html或者CSS代码
+                // JavaScript 代码
+            </body>
+        原因：JS是实现动态效果的，页面解析顺序是从上到下的。
+    b）html的头部，例如
+         <head>
+                <script>
+                    // JavaScript代码
+                </script>
+                // 或者
+                <script type="text/javascript">
+                    // JavaScript代码
+                </script>
+                // 或者
+                <script src='js文件路径'></script>
+         </head>
+3 注释
+  单行注释  //xxx
+  多行注释  /* xxx */
+  
+4 定时器
+    setInterval('执行的JS代码', 间隔时间);  //间隔时间以毫秒为单位
+    
+5 书写JS代码的方式
+   a) 书写在html文件中，再执行
+   b）临时书写，可在浏览器的console终端上
+    浏览器-》右键-》审查元素-》Console
+
+6 变量
+      python:
+        name = 'test'
+      JavaScript:
+        name = 'test'       // 默认，全局变量
+        var name = 'test'   // 局部变量
+
+7 基本数据类型
+    数字
+        a = 10;
+        str1 = '123';
+        i = parseInt(str1);     // 字符串转整型
+        j = parseFloat(str1);   // 字符串转浮点型
+    字符串
+        str2 = 'today';
+        str2.charAt(0);         // 取字符串数组中的0号坐标字符
+        str2.charAt(4);
+        str2.substring(2,4);    // 取字符串数组中[2,4]坐标的字符子串
+        str2.length;            // 获取字符串长度
+    字典
+    列表
+    布尔类型
+        
+条件语句
+    
+循环语句
+    for
+       

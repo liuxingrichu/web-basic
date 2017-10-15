@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+</head>
+<body>
+    <script>
+        // 设置定时器，参数：js语句，以毫秒为单位的时间
+        // setInterval("alert(123);", 5000);
+        // setInterval("alert('timer')", 5000);
+
+        function func(){
+            console.log(1);
+        }
+
+        setInterval('func();', 2000);
+
+    </script>
+</body>
+</html>

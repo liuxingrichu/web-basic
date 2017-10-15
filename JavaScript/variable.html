@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 变量</title>
+</head>
+<body>
+    <script>
+        name = 'Tom';           //全局变量
+        function func(){
+            var name = 'Lucy';  //局部变量
+        }
+        // 基本数据类型：数字
+        a = 10;
+        str1 = '123';
+        i = parseInt(str1);     // 字符串转整型
+        j = parseFloat(str1);   // 字符串转浮点型
+        // 基本数据类型：字符串
+        str2 = 'today';
+        str2.charAt(0);         // 取字符串数组中的0号坐标字符
+        str2.charAt(4);
+        str2.substr(2,4);       // 取字符串数组中[2,4]坐标的字符子串
+        str2.length;            // 获取字符串长度
+    </script>
+</body>
+</html>
