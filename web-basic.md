@@ -275,15 +275,53 @@ CSS补充：
         i = parseInt(str1);     // 字符串转整型
         j = parseFloat(str1);   // 字符串转浮点型
     字符串
+        字符串是不可修改的
         str2 = 'today';
         str2.charAt(0);         // 取字符串数组中的0号坐标字符
         str2.charAt(4);
         str2.substring(2,4);    // 取字符串数组中[2,4]坐标的字符子串
         str2.length;            // 获取字符串长度
-    字典
-    列表
+        obj = '  1A   2a  ';
+        obj.trim();             //移除两边的空白
+        obj.trimLeft();         //移除左边的空白
+        obj.trimRight();        //移除右边的空白
+        obj.concat('1', ...)    //拼接
+        obj.indexOf(子串, start)      //从start坐标开始向右查询，子串所在的坐标
+        obj.lastIndexOf(子串, start)  //从start坐标开始向左查询，子串所在的坐标
+        obj.slice(start, end)   //切片(start, end]
+        obj.toLowerCase()       //字母转小写
+        obj.toUpperCase()       //字母转大写
     布尔类型
+        true    小写
+        false   小写
+        &&      与
+        ||      或
+        ==      相等
+        !=      不相等
+        ===     值与类型相等
+        !===    不相等
+    数组
+        a = [11, 22, 22, 33]
+        a.length;           //长度
+        a.push(6);          //在尾部追加一个元素
+        a.pop();            //从尾部取一个元素
+        a.unshift(1);       //在头部添加一个元素
+        a.shift();          //在头部取一个元素
+        a.slice(开始坐标, 删除的个数, value)    //可实现插入。删除。替换
+        obj = [1, 2, 3];
+        obj.splice(1, 1 ,0); //[1, 2, 3]替换成[1, 0, 3]
+        obj.splice(1,1);     //[1, 0, 3]删除成[1, 3]
+        obj.splice(2,2, 6);  //[1, 3]插入成[1, 3, 6]，每次仅能插入一个，start位置可以有跨度
+        a.slice(start, end); //切片（start,end]
+        a.reverse();         //反转
+        a.join('-');         //用‘-’，将数组连接成一个字符串
+        a.concat('123');     //数组拼接
+        a.sort();            //数组排序
+    字典
+        a = {'k1':'v1', 'k2':'v2'}
         
+参阅：http://www.cnblogs.com/wupeiqi/articles/5602773.html
+
 条件语句
     
 循环语句
