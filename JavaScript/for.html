@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 循环的两种方式</title>
+</head>
+<body>
+    <script>
+        // 方式一： 循环元素是下标
+        var a = [11, 22, 33, 44];
+        for (var item in a)
+        {
+            console.log(item, a[item]);
+        }
+        var b = {'k1':'v1', 'k2':'v2'};
+        for (var item in b)
+        {
+            console.log(item)
+        }
+        // 方式二: 类似其他语言, 该方式不支持字典操作
+        for (var i=0; i< a.length; i++){
+            console.log(a[i]);
+        }
+    </script>
+
+</body>
+</html>

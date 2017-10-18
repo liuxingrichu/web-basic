@@ -299,7 +299,7 @@ CSS补充：
         ==      相等
         !=      不相等
         ===     值与类型相等
-        !===    不相等
+        !==    不相等
     数组
         a = [11, 22, 22, 33]
         a.length;           //长度
@@ -322,8 +322,34 @@ CSS补充：
         
 参阅：http://www.cnblogs.com/wupeiqi/articles/5602773.html
 
-条件语句
+8 条件语句
+    if(条件)
+    {}
+    else if(条件)
+    {}
+    else
+    {}
     
-循环语句
-    for
+9 for循环
+    // 方式一： 循环元素是下标
+    var a = [11, 22, 33, 44];
+    for (var item in a)
+    {
+        console.log(item, a[item]);
+    }
+    var b = {'k1':'v1', 'k2':'v2'};
+    for (var item in b)
+    {
+        console.log(item)
+    }
+    // 方式二: 类似其他语言, 该方式不支持字典操作
+    for (var i=0; i< a.length; i++){
+        console.log(a[i]);
+    }
+
+10 函数
+   function 函数名(形参1，形参2)
+   {}
+   
+   函数名(1,2);
        
