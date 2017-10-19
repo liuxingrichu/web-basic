@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom 直接查找标签 操作标签</title>
+    <style>
+        .c1{
+            background-color: red;
+            width: 20%;
+            height: 20px;
+        }
+        .c2{
+            background-color: green;
+            width: 80%;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="i1">第一个</div>
+    <a>1</a>
+    <a>2</a>
+    <a>3</a>
+    <br/>
+    <span name="nice">good</span>
+    <span name="nice">well</span>
+    <div class="c1">c1</div>
+    <div class="c1">2 c1</div>
+    <div class="c2">c2</div>
+    <script>
+        var tag = document.getElementById('i1');
+        tag.innerText = 'first';
+        var tag_array = document.getElementsByTagName('a');
+        for (var item in tag_array)
+        {
+            tag_array[item].innerText = 'one';
+        }
+        var name_array = document.getElementsByName('nice');
+        name_array[1].innerText = 'pretty';
+        var class_array = document.getElementsByClassName('c1');
+        class_array[1].innerText = 'AAAAA';
+    </script>
+</body>
+</html>

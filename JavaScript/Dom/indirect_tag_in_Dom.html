@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom 间接查找标签 操作标签</title>
+</head>
+<body>
+    <div>
+        <div>c1</div>
+        <div></div>
+    </div>
+    <div>
+        <div>
+            <span id="i1">c2</span>
+            <span></span>
+        </div>
+    </div>
+    <div>
+        <div></div>
+        <div>c3</div>
+        <div></div>
+    </div>
+    <script>
+        var tag = document.getElementById('i1');
+        tag.parentElement.parentElement.previousElementSibling.firstElementChild.innerText = 'first';
+        tag.parentElement.parentElement.nextElementSibling.children[1].innerText = 'good night';
+
+        tag.className = 'c1';
+        tag.classList.add('c2');
+        tag.classList.remove('c2');
+    </script>
+</body>
+</html>

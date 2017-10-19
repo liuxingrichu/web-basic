@@ -353,3 +353,46 @@ CSS补充：
    
    函数名(1,2);
        
+(4) Dom
+1 查找标签
+    a)直接查找
+        <!--标签id唯一-->
+        document.getElementById('i1');          根据id属性获取唯一标签
+        document.getElementsByTagName('a');     根据标签名获取标签集合
+        document.getElementsByName('nice');     根据name属性获取标签集合
+        document.getElementsByClassName('c1');  根据class属性获取标签集合
+    b)间接查找
+        tag = document.getElementById('i1');
+        parentNode          // 父节点
+        childNodes          // 所有子节点
+        firstChild          // 第一个子节点
+        lastChild           // 最后一个子节点
+        nextSibling         // 下一个兄弟节点
+        previousSibling     // 上一个兄弟节点 
+        parentElement           // 父节点标签元素
+        children                // 所有子标签
+        firstElementChild       // 第一个子标签元素
+        lastElementChild        // 最后一个子标签元素
+        nextElementSibling     // 下一个兄弟标签元素
+        previousElementSibling  // 上一个兄弟标签元素
+              
+2 操作标签
+    a）innerText
+        作用：获取标签里的文本内容
+        方法：标签.innerText
+        实现：对标签文件内容重新赋值
+        方法：标签.innerText = "xxxxx";
+    b) className
+        tag.className = '样式名';          //对整体样式操作
+        tag.classList.add('样式名');       //添加指定样式
+        tag.classList.remove('样式名');    //删除指定样式
+        PS:
+            <div onclick='func();'>点我</div>
+            <script>
+                function func(){
+                }
+            </script>
+
+参阅：http://www.cnblogs.com/wupeiqi/articles/5643298.html
+            
+            
