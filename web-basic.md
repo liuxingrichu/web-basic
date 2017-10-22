@@ -353,6 +353,10 @@ CSS补充：
    
    函数名(1,2);
        
+11 分号
+    JS代码，可以不写分号，但建议写；
+    原因：转换工具会压缩代码，节约空间，实现流量的节省、效率的提升，同时可以提升理解、避免代码问题。
+           
 (4) Dom
 1 查找标签
     a)直接查找
@@ -392,6 +396,11 @@ CSS补充：
                 function func(){
                 }
             </script>
+    c) checked
+        检测标签属性
+        check_box.checked
+        设置标签值
+        check_box.checked = false;                    
 
 参阅：http://www.cnblogs.com/wupeiqi/articles/5643298.html
             
