@@ -2,3 +2,6 @@
 
 网页布局，详见index.html
 样式设计，详见commons.css
+
+frameset已过时，不建议在使用
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/frameset
