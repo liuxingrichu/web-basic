@@ -1,337 +1,337 @@
-web����������ɲ��֣�
-��1��html ����
-    1��һ�������ʶ�����
-    2��������Ա
-        ��Ҫ����html����
-        ������̨���г���
-            --��дhtml�ļ�����ģ�����ã�
-            --���ݿ��ȡ���ݣ��滻��html�ļ�ָ��λ�ã�Web��ܣ�
-    3�����ز���
-        ��ʽһ��ֱ�����������
-        ��ʽ����Pycharm�򿪲���
-    4����дhtml�ļ�
-        --doctype��Ӧ��ϵ
-        --html��ǩ����ǩ�ڲ�����д���ԣ��ñ�ǩ����дһ��
-        --ע�ͷ����� <!-- ע�͵����� -->
-    5����ǩ����
-        �Զ��պϱ�ǩ(�Ƚ���)
+web开发三个组成部分：
+（1）html 裸人
+    1、一套浏览器识别规则
+    2、开发人员
+        需要掌握html规则
+        开发后台运行程序
+            --书写html文件（起到模板作用）
+            --数据库获取数据，替换到html文件指定位置（Web框架）
+    3、本地测试
+        方式一：直接用浏览器打开
+        方式二：Pycharm打开测试
+    4、编写html文件
+        --doctype对应关系
+        --html标签，标签内部可以写属性，该标签仅能写一个
+        --注释方法： <!-- 注释的内容 -->
+    5、标签分类
+        自动闭合标签(比较少)
             <meta charset="UTF-8"/>
             <br />
-        �����պϱ�ǩ
-            <title>�����ڶ�</title>
-    6 head��ǩ
-        <meta /> ���롢��ת��ˢ�¡��ؼ��֡�������IE����
+        主动闭合标签
+            <title>人生摆渡</title>
+    6 head标签
+        <meta /> 编码、调转、刷新、关键字、描述、IE兼容
             <meta http-equiv="X-UA-COMPATIBLE" content="IE=IE9;IE=IE8;"/>
-        title��ǩ
-        <link />��ͼ�꣬Ƿ
-        <style /> ��CSS
-        <script>Ƿ
-    7 body��ǩ
-        &nbsp;�ո�&gt;����&lt;С��
-        h��ǩ������
-        p��ǩ������
-        br��ǩ������ 
-        ��ǩ���ࣺ
-            ���ڱ�ǩ
-                span���װ壺���������ԣ�
-            �鼶��ǩ
-                h��ǩ���Ӵ�Ӵ֣���p��ǩ������֮���м�ࣩ��br��ǩ��
-                div��ǩ���װ壩
-            ���ַ�����
-                chrome����� �Ҽ�-��Ԫ�����-������Ŵ�ͼ��-���ƶ�������鿴
-                    �÷�ʽ�������ڶ�λԪ�ء��鿴��ʽ��
-        ��ǩ֮�����Ƕ��
-        ��ǩ���ڵ���˼��
-            ���㶨λ��������CSS������JS����
-        chrome���Ԫ��
-            ���㶨λ�Ͳ鿴��ʽ
-        inputϵ�� + form��ǩ
-            type="text"     ��name��value����
-            type="password" ��name��value���� 
-            type="button"   ��value����
-            type="submit"   ��value����
-            type="radio"    ��value��checked����һ������name���ԣ�name��ͬ�򻥳⣩
-            type="checkbox" ��value��checked���ɶ������name���ԣ�name������������ȡ���ݣ�
-            type="file"     ����form�����е�enctype="multipart/form-data"����
-            type="reset"    ����
-            <textarea>Ĭ��ֵ</textarea>    ��name����
-            select��ǩ       ��name���ԣ��ڲ���option value��size������ʾ��multiple��ѡ�ж���
-        a��ǩ�����ύ����̨��
-            ʹ�ó�����
-            ��1�������ӣ�ʵ�ֵ�ת
-            ��2��ê��ê�� href="#ĳ��ǩ��ID" ע����ǩID�����ظ�
-        img��ǩ���ԣ�
-            src     ͼƬ��Դ
-            title   ��ʾ
-            alt     ͼƬ�Ҳ���ʱ����ʾ�ַ�
-        �б���ǩ
-            ul  ���ģʽ
+        title标签
+        <link />搞图标，
+        <style /> 见CSS
+        <script> 见JavaScript
+    7 body标签
+        &nbsp;空格&gt;大于&lt;小于
+        h标签：标题
+        p标签：段落
+        br标签：换行 
+        标签分类：
+            行内标签
+                span（白板：无特殊特性）
+            块级标签
+                h标签（加大加粗）、p标签（段落之间有间距）、br标签、
+                div标签（白板）
+            区分方法：
+                chrome浏览器 右键-》元素审查-》点击放大镜图标-》移动鼠标来查看
+                    该方式可以用于定位元素、查看样式。
+        标签之间可以嵌套
+        标签存在的意思：
+            方便定位、操作；CSS操作；JS操作
+        chrome审查元素
+            方便定位和查看样式
+        input系列 + form标签
+            type="text"     有name、value属性
+            type="password" 有name、value属性 
+            type="button"   有value属性
+            type="submit"   有value属性
+            type="radio"    有value、checked（仅一个）、name属性（name相同则互斥）
+            type="checkbox" 有value、checked（可多个）、name属性（name可用于批量获取数据）
+            type="file"     依赖form表单中的enctype="multipart/form-data"属性
+            type="reset"    重置
+            <textarea>默认值</textarea>    有name属性
+            select标签       有name属性，内部有option value，size多行显示，multiple可选中多行
+        a标签（不提交到后台）
+            使用场景：
+            （1）超链接，实现调转
+            （2）锚，锚点 href="#某标签的ID" 注：标签ID不可重复
+        img标签属性：
+            src     图片来源
+            title   提示
+            alt     图片找不到时的提示字符
+        列表标签
+            ul  标点模式
                 li 
-            ol  ����ģʽ
+            ol  数字模式
                 li 
             dl
-                dt  ����
-                dd  ����
-        table�����ǩ
-           thead    ��ͷ
-                tr  ��
-                    th  ��
-           tbody    ������
-                tr  ��
-                    td  ��
-           colspan='n'  ���ںϲ�n����Ԫ��
-           rowspan='n'  ���кϲ�n����Ԫ��
-        label��ǩ
-            �������ʱ��ʹ������id�ı�ǩ����ȡ���
-            һ�����input��ǩʹ�� 
-        fieldset��ǩ
-            legend ���ɱ߿�
-    8 get������post����������
-    ��1��get��������������ݣ���䵽url�У�url���ڿ�����д���ݣ��ٷ��ŵ�����ˣ�
-        post�������������ݣ���䵽body�У��ٷ��ŵ�����ˡ�
-    ��2��get������post������������ݣ�������ͨ��ץ����ʽ����ȡ���ݣ�
-        ���������ַ�ʽ����ȫ֮˵��
-    ��Ҫ����20����ǩ����
+                dt  标题
+                dd  内容
+        table表格标签
+           thead    表头
+                tr  行
+                    th  列
+           tbody    表内容
+                tr  行
+                    td  列
+           colspan='n'  行内合并n个单元格
+           rowspan='n'  跨行合并n个单元格
+        label标签
+            点击文字时，使关联的id的标签，获取光标
+            一般配合input标签使用 
+        fieldset标签
+            legend 生成边框
+    8 get方法与post方法的区别
+    （1）get方法将输入的内容，填充到url中，url上内看到填写内容，再发放到服务端；
+        post方法将输入内容，填充到body中，再发放到服务端。
+    （2）get方法和post方法传输的内容，都可以通过抓包方式，获取内容，
+        不存在那种方式更安全之说。
+    需要记忆20个标签左右
     
-��2��CSS  ����
-    ��ɫ��λ��
-    ��дCSS��ʽ��
-    1. �ڱ�ǩ�ϣ�����style����
-    2. head��ǩ�У���дstyle��ǩ
-        -idѡ���������Ƽ�ʹ�ã�
+（2）CSS  衣着
+    颜色、位置
+    编写CSS样式：
+    1. 在标签上，设置style属性
+    2. head标签中，书写style标签
+        -id选择区（不推荐使用）
             #i1{
                 background-color:red;
                 height: 49px;
             }
-        - classѡ����
-            .����{
+        - class选择区
+            .名称{
                ...
                }
-            <��ǩ class="����">xx</��ǩ>
-        - ��ǩѡ����
+            <标签 class="名称">xx</标签>
+        - 标签选择器
             div{
                 ...
             }
-            ����div��ǩ�����ϴ���ʽ
-        - �㼶ѡ����(�ո�)
+            所有div标签设置上此样式
+        - 层级选择器(空格)
            span div .c2{
                 ...
            }
-        - ���ѡ���������ţ�
+        - 组合选择器（逗号）
             .c1 .c2 .c3{
                 ...
             }
-        - ����ѡ����
-            ��ѡ�񵽵ı�ǩ����ͨ�����Խ���һ��ɸѡ
-        PS��
-            ���ȼ�����ǩ�ϵ�style���ȣ���д˳�򣬾ͽ�ԭ��������ȣ�
-    2.5 css��ʽҲ����д��css�ļ���
+        - 属性选择器
+            对选择到的标签，再通过属性进行一次筛选
+        PS：
+            优先级：标签上的style优先，编写顺序，就近原则（下面的先）
+    2.5 css样式也可以写在css文件中
         <link rel="stylesheet" href="commons.css"/>
-    3.ע��
+    3.注释
         /*
         xxx
         */
-    4.�߿�
-        ���ȡ���ʽ����ɫ��border��4px solid red��
-        ��������
-    5 ���ø�ʽ
-        height               �߶� 
-        width                ���ȣ����ء��ٷֱȣ�
-        font-size            �����С 
-        text-align:center    ˮƽ�������
-        line-height          ��ֱ�������ݱ�ǩ�߶Ⱦ���
-        font-weight          ����Ӵ�
-        color                ������ɫ
+    4.边框
+        宽度、样式、颜色（border：4px solid red）
+        左右上下
+    5 常用格式
+        height               高度 
+        width                宽度（像素、百分比）
+        font-size            字体大小 
+        text-align:center    水平方向居中
+        line-height          垂直方法根据标签高度居中
+        font-weight          字体加粗
+        color                字体颜色
     6 float
-        ��ʵ�ֱ�ǩ�������鼶��ǩҲ���Զѵ�
-        ����ǩ���Ƹ����ӱ�ǩ��
+        可实现标签浮动，块级标签也可以堆叠
+        父标签控制浮动子标签：
             <div style="clear:both;"></div>
     7 display
-        display: none;      �ñ�ǩ����ʾ
-        display: inline;    ת���ڱ�ǩ
-        display: block;     ת�鼶��ǩ
+        display: none;      让标签不显示
+        display: inline;    转行内标签
+        display: block;     转块级标签
         display: inline-block;
-            ��ǩ�߱����ڱ�ǩ�����ԣ�ͬʱ�������ø߶ȡ����ȡ�padding��margin
-        *���ڱ�ǩ
-            �޷����ø߶ȡ����ȡ�padding��margin
-        *�鼶��ǩ
-            �����ø߶ȡ����ȡ�padding��margin
-    8 �߾�padding margin
-        �ڱ߾ࣺpadding
-        ��߾ࣺmargin
-        margin: 8px auto    ���У�auto�����ң�8pxΪ����
-        margin: auto        �������Ҿ���
+            标签具备行内标签的属性，同时可以设置高度、宽度、padding、margin
+        *行内标签
+            无法设置高度、宽度、padding、margin
+        *块级标签
+            可设置高度、宽度、padding、margin
+    8 边距padding margin
+        内边距：padding
+        外边距：margin
+        margin: 8px auto    居中，auto是左右，8px为上下
+        margin: auto        上下左右居中
         
-���������ص�عˣ�
-1 �鼶��ǩ�����ڱ�ǩ
-2 form��ǩ
-    <!--�ϴ��ļ���Ҫʹ��multipart/form-data-->
-    <form action="url���ύ�ĵ�ַ��" method="get" enctype="multipart/form-data">
-        <div>�鼶��ǩ</div>
+以上内容重点回顾：
+1 块级标签和行内标签
+2 form标签
+    <!--上传文件需要使用multipart/form-data-->
+    <form action="url（提交的地址）" method="get" enctype="multipart/form-data">
+        <div>块级标签</div>
         <input  type="text" name="q"/>
         <input type="text" name="b"/>
-        <!--�ϴ��ļ�-->
+        <!--上传文件-->
         <input type="file" name="f"/>
     </form>
-    GET����������ƴ�ӵ�url��
-        http://xxx?q=�û������ֵ
-        http://xxx?q=�û������ֵ&b=�û����������
-    POST��
-        ����ͷ
-        ��������
+    GET：输入内容拼接到url上
+        http://xxx?q=用户输入的值
+        http://xxx?q=用户输入的值&b=用户输入的内容
+    POST：
+        请求头
+        请求内容
 3 display
     block; inline; inline-block;
 4 float
     <div>
-        <div style="float:left;">�ӱ�ǩ</div>
-        <!--����ӱ�ǩ��������������ǩ�ĳ���-->
+        <div style="float:left;">子标签</div>
+        <!--解决子标签，浮动超出父标签的场景-->
         <div style="clear:both;"><div>
     </div>
-5 margin: 0 auto;    ��߾�
-6 padding   �ڱ߾ࣨ�������ű仯��
+5 margin: 0 auto;    外边距
+6 padding   内边距（自身发放变化）
 
-CSS���䣺
+CSS补充：
 1 position
     fixed
-        ���ã��̶���ҳ���ĳ��λ��
+        作用：固定在页面的某个位置
     relative + absolute
-        <!--absolute���ٵ���ʹ��-->
-        <!--����ʹ��relative����ûʹ��һ��-->
-        <!--relative + absolute �ӱ�ǩ������ڸ���ǩ��λ��-->
+        <!--absolute很少单独使用-->
+        <!--单独使用relative，与没使用一样-->
+        <!--relative + absolute 子标签是相对于父标签定位的-->
         <div style="position:relative;">
             <div style="position:absolute; left:0; top:0;"></div>
         </div>
 2 z-index 
-    �����ʾ˳����� Խ��Խ��ǰ��
+    层次显示顺序控制 越大越在前面
 3 opacity 
-    ͸���� 0-1��ԽСԽ͸�� 
+    透明度 0-1，越小越透明 
 4 overflow
-    auto   ͼƬ��ʾ��Ӧ�ߴ磬ͬʱ��������
-    hidden ͼƬ���أ�����ʾ�ü��ĳߴ�
+    auto   图片显示相应尺寸，同时带滚动条
+    hidden 图片隐藏，仅显示裁剪的尺寸
 5 hover
-    ������ƶ�����ǰ��ǩ��ʱ�����Բ���Ч
-6 background-image    ͼƬ��Ϊ������Ĭ���ظ�������ǩ�ռ�
-    background-image:url('rich.jpg') ͼƬ��ַ
-7 background-repeat �ظ�����
-    repeat-x    x�᷽���ظ�
-    repeat-y    y�᷽���ظ�
-    no-repeat   ���ظ�
-8 background-position   ͨ���ƶ����꣬��ʾ��ͬͼ��
-    background-position-x: 0;       ��ʾx��
-    background-position-y: -59px;   ��ʾy��
-    background-position: 0 -59px;   �ֱ��ʾx�ᡢy��
-9 background    ��д��ʽ�������ڱ�������ظ���д
-    background: red url(chouti.png) 0 -60px no-repeat; ����ɫ ͼ����Դ x�� y�� ���ظ� 
+    当鼠标移动到当前标签上时，属性才生效
+6 background-image    图片作为背景，默认重复放满标签空间
+    background-image:url('rich.jpg') 图片地址
+7 background-repeat 重复机制
+    repeat-x    x轴方向重复
+    repeat-y    y轴方向重复
+    no-repeat   不重复
+8 background-position   通过移动坐标，显示不同图标
+    background-position-x: 0;       表示x轴
+    background-position-y: -59px;   表示y轴
+    background-position: 0 -59px;   分别表示x轴、y轴
+9 background    简写方式，有利于避免代码重复编写
+    background: red url(chouti.png) 0 -60px no-repeat; 背景色 图标来源 x轴 y轴 不重复 
     
-��3��JS   ��̬����
-    �����ı�����ԣ�����������н���js�Ĺ���
+（3）JS   动态属性
+    独立的编程语言，而浏览器具有解析js的功能
 
-1 JavaScript����Ĵ�����ʽ
-    a)html��
-    b)js�ļ���
-2 JavaScript������html�ļ��е�λ��
-    a) JavaScript������÷���body��ǩ�е����·����Ƽ���
-        ���磺
+1 JavaScript代码的存在形式
+    a)html中
+    b)js文件中
+2 JavaScript代码在html文件中的位置
+    a) JavaScript代码最好放在body标签中的最下方（推荐）
+        例如：
             <body>
-                // html����CSS����
-                // JavaScript ����
+                // html或者CSS代码
+                // JavaScript 代码
             </body>
-        ԭ��JS��ʵ�ֶ�̬Ч���ģ�ҳ�����˳���Ǵ��ϵ��µġ�
-    b��html��ͷ��������
+        原因：JS是实现动态效果的，页面解析顺序是从上到下的。
+    b）html的头部，例如
          <head>
                 <script>
-                    // JavaScript����
+                    // JavaScript代码
                 </script>
-                // ����
+                // 或者
                 <script type="text/javascript">
-                    // JavaScript����
+                    // JavaScript代码
                 </script>
-                // ����
-                <script src='js�ļ�·��'></script>
+                // 或者
+                <script src='js文件路径'></script>
          </head>
-3 ע��
-  ����ע��  //xxx
-  ����ע��  /* xxx */
+3 注释
+  单行注释  //xxx
+  多行注释  /* xxx */
   
-4 ��ʱ��
-    setInterval('ִ�е�JS����', ���ʱ��);  //���ʱ���Ժ���Ϊ��λ
+4 定时器
+    setInterval('执行的JS代码', 间隔时间);  //间隔时间以毫秒为单位
     
-5 ��дJS����ķ�ʽ
-   a) ��д��html�ļ��У���ִ��
-   b����ʱ��д�������������console�ն���
-    �����-���Ҽ�-�����Ԫ��-��Console
+5 书写JS代码的方式
+   a) 书写在html文件中，再执行
+   b）临时书写，可在浏览器的console终端上
+    浏览器-》右键-》审查元素-》Console
 
-6 ����
+6 变量
       python:
         name = 'test'
       JavaScript:
-        name = 'test'       // Ĭ�ϣ�ȫ�ֱ���
-        var name = 'test'   // �ֲ�����
+        name = 'test'       // 默认，全局变量
+        var name = 'test'   // 局部变量
 
-7 ������������
-    ����
+7 基本数据类型
+    数字
         a = 10;
         str1 = '123';
-        i = parseInt(str1);     // �ַ���ת����
-        j = parseFloat(str1);   // �ַ���ת������
-    �ַ���
-        �ַ����ǲ����޸ĵ�
+        i = parseInt(str1);     // 字符串转整型
+        j = parseFloat(str1);   // 字符串转浮点型
+    字符串
+        字符串是不可修改的
         str2 = 'today';
-        str2.charAt(0);         // ȡ�ַ��������е�0�������ַ�
+        str2.charAt(0);         // 取字符串数组中的0号坐标字符
         str2.charAt(4);
-        str2.substring(2,4);    // ȡ�ַ���������[2,4]������ַ��Ӵ�
-        str2.length;            // ��ȡ�ַ�������
+        str2.substring(2,4);    // 取字符串数组中[2,4）坐标的字符子串
+        str2.length;            // 获取字符串长度
         obj = '  1A   2a  ';
-        obj.trim();             //�Ƴ����ߵĿհ�
-        obj.trimLeft();         //�Ƴ���ߵĿհ�
-        obj.trimRight();        //�Ƴ��ұߵĿհ�
-        obj.concat('1', ...)    //ƴ��
-        obj.indexOf(�Ӵ�, start)      //��start���꿪ʼ���Ҳ�ѯ���Ӵ����ڵ�����
-        obj.lastIndexOf(�Ӵ�, start)  //��start���꿪ʼ�����ѯ���Ӵ����ڵ�����
-        obj.slice(start, end)   //��Ƭ(start, end]
-        obj.toLowerCase()       //��ĸתСд
-        obj.toUpperCase()       //��ĸת��д
-    ��������
-        true    Сд
-        false   Сд
-        &&      ��
-        ||      ��
-        ==      ���
-        !=      �����
-        ===     ֵ���������
-        !==    �����
-    ����
+        obj.trim();             //移除两边的空白
+        obj.trimLeft();         //移除左边的空白
+        obj.trimRight();        //移除右边的空白
+        obj.concat('1', ...)    //拼接
+        obj.indexOf(子串, start)      //从start坐标开始向右查询，子串所在的坐标
+        obj.lastIndexOf(子串, start)  //从start坐标开始向左查询，子串所在的坐标
+        obj.slice(start, end)   //切片(start, end]
+        obj.toLowerCase()       //字母转小写
+        obj.toUpperCase()       //字母转大写
+    布尔类型
+        true    小写
+        false   小写
+        &&      与
+        ||      或
+        ==      相等
+        !=      不相等
+        ===     值与类型相等
+        !==    不相等
+    数组
         a = [11, 22, 22, 33]
-        a.length;           //����
-        a.push(6);          //��β��׷��һ��Ԫ��
-        a.pop();            //��β��ȡһ��Ԫ��
-        a.unshift(1);       //��ͷ������һ��Ԫ��
-        a.shift();          //��ͷ��ȡһ��Ԫ��
-        a.slice(��ʼ����, ɾ���ĸ���, value)    //��ʵ�ֲ��롣ɾ�����滻
+        a.length;           //长度
+        a.push(6);          //在尾部追加一个元素
+        a.pop();            //从尾部取一个元素
+        a.unshift(1);       //在头部添加一个元素
+        a.shift();          //在头部取一个元素
+        a.slice(开始坐标, 删除的个数, value)    //可实现插入。删除。替换
         obj = [1, 2, 3];
-        obj.splice(1, 1 ,0); //[1, 2, 3]�滻��[1, 0, 3]
-        obj.splice(1,1);     //[1, 0, 3]ɾ����[1, 3]
-        obj.splice(2,2, 6);  //[1, 3]�����[1, 3, 6]��ÿ�ν��ܲ���һ����startλ�ÿ����п��
-        a.slice(start, end); //��Ƭ��start,end]
-        a.reverse();         //��ת
-        a.join('-');         //�á�-�������������ӳ�һ���ַ���
-        a.concat('123');     //����ƴ��
-        a.sort();            //��������
-    �ֵ�
+        obj.splice(1, 1 ,0); //[1, 2, 3]替换成[1, 0, 3]
+        obj.splice(1,1);     //[1, 0, 3]删除成[1, 3]
+        obj.splice(2,2, 6);  //[1, 3]插入成[1, 3, 6]，每次仅能插入一个，start位置可以有跨度
+        a.slice(start, end); //切片（start,end]
+        a.reverse();         //反转
+        a.join('-');         //用‘-’，将数组连接成一个字符串
+        a.concat('123');     //数组拼接
+        a.sort();            //数组排序
+    字典
         a = {'k1':'v1', 'k2':'v2'}
         
-���ģ�http://www.cnblogs.com/wupeiqi/articles/5602773.html
+参阅：http://www.cnblogs.com/wupeiqi/articles/5602773.html
 
-8 �������
-    if(����)
+8 条件语句
+    if(条件)
     {}
-    else if(����)
+    else if(条件)
     {}
     else
     {}
     
-9 forѭ��
-    // ��ʽһ�� ѭ��Ԫ�����±�
+9 for循环
+    // 方式一： 循环元素是下标
     var a = [11, 22, 33, 44];
     for (var item in a)
     {
@@ -342,66 +342,66 @@ CSS���䣺
     {
         console.log(item)
     }
-    // ��ʽ��: ������������, �÷�ʽ��֧���ֵ����
+    // 方式二: 类似其他语言, 该方式不支持字典操作
     for (var i=0; i< a.length; i++){
         console.log(a[i]);
     }
 
-10 ����
-   function ������(�β�1���β�2)
+10 函数
+   function 函数名(形参1，形参2)
    {}
    
-   ������(1,2);
+   函数名(1,2);
        
-11 �ֺ�
-    JS���룬���Բ�д�ֺţ�������д��
-    ԭ��ת�����߻�ѹ�����룬��Լ�ռ䣬ʵ�������Ľ�ʡ��Ч�ʵ�������ͬʱ�����������⡢����������⡣
+11 分号
+    JS代码，可以不写分号，但建议写；
+    原因：转换工具会压缩代码，节约空间，实现流量的节省、效率的提升，同时可以提升理解、避免代码问题。
            
 (4) Dom
-1 ���ұ�ǩ
-    a)ֱ�Ӳ���
-        <!--��ǩidΨһ-->
-        document.getElementById('i1');          ����id���Ի�ȡΨһ��ǩ
-        document.getElementsByTagName('a');     ���ݱ�ǩ����ȡ��ǩ����
-        document.getElementsByName('nice');     ����name���Ի�ȡ��ǩ����
-        document.getElementsByClassName('c1');  ����class���Ի�ȡ��ǩ����
-    b)��Ӳ���
+1 查找标签
+    a)直接查找
+        <!--标签id唯一-->
+        document.getElementById('i1');          根据id属性获取唯一标签
+        document.getElementsByTagName('a');     根据标签名获取标签集合
+        document.getElementsByName('nice');     根据name属性获取标签集合
+        document.getElementsByClassName('c1');  根据class属性获取标签集合
+    b)间接查找
         tag = document.getElementById('i1');
-        parentNode          // ���ڵ�
-        childNodes          // �����ӽڵ�
-        firstChild          // ��һ���ӽڵ�
-        lastChild           // ���һ���ӽڵ�
-        nextSibling         // ��һ���ֵܽڵ�
-        previousSibling     // ��һ���ֵܽڵ� 
-        parentElement           // ���ڵ��ǩԪ��
-        children                // �����ӱ�ǩ
-        firstElementChild       // ��һ���ӱ�ǩԪ��
-        lastElementChild        // ���һ���ӱ�ǩԪ��
-        nextElementSibling     // ��һ���ֵܱ�ǩԪ��
-        previousElementSibling  // ��һ���ֵܱ�ǩԪ��
+        parentNode          // 父节点
+        childNodes          // 所有子节点
+        firstChild          // 第一个子节点
+        lastChild           // 最后一个子节点
+        nextSibling         // 下一个兄弟节点
+        previousSibling     // 上一个兄弟节点 
+        parentElement           // 父节点标签元素
+        children                // 所有子标签
+        firstElementChild       // 第一个子标签元素
+        lastElementChild        // 最后一个子标签元素
+        nextElementSibling     // 下一个兄弟标签元素
+        previousElementSibling  // 上一个兄弟标签元素
               
-2 ������ǩ
-    a��innerText
-        ���ã���ȡ��ǩ����ı�����
-        ��������ǩ.innerText
-        ʵ�֣��Ա�ǩ�ļ��������¸�ֵ
-        ��������ǩ.innerText = "xxxxx";
+2 操作标签
+    a）innerText
+        作用：获取标签里的文本内容
+        方法：标签.innerText
+        实现：对标签文件内容重新赋值
+        方法：标签.innerText = "xxxxx";
     b) className
-        tag.className = '��ʽ��';          //��������ʽ����
-        tag.classList.add('��ʽ��');       //����ָ����ʽ
-        tag.classList.remove('��ʽ��');    //ɾ��ָ����ʽ
+        tag.className = '样式名';          //对整体样式操作
+        tag.classList.add('样式名');       //添加指定样式
+        tag.classList.remove('样式名');    //删除指定样式
         PS:
-            <div onclick='func();'>����</div>
+            <div onclick='func();'>点我</div>
             <script>
                 function func(){
                 }
             </script>
     c) checked
-        ����ǩ����
+        检测标签属性
         check_box.checked
-        ���ñ�ǩֵ
+        设置标签值
         check_box.checked = false;                    
 
-���ģ�http://www.cnblogs.com/wupeiqi/articles/5643298.html
+参阅：http://www.cnblogs.com/wupeiqi/articles/5643298.html
             
             
