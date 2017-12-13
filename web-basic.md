@@ -46,7 +46,7 @@
         chrome审查元素
             方便定位和查看样式
         input系列 + form标签
-            type="text"     有name、value属性
+            type="text"     有name、value属性，placeholder属性（信息提示）
             type="password" 有name、value属性 
             type="button"   有value属性
             type="submit"   有value属性
@@ -54,8 +54,9 @@
             type="checkbox" 有value、checked（可多个）、name属性（name可用于批量获取数据）
             type="file"     依赖form表单中的enctype="multipart/form-data"属性
             type="reset"    重置
-            <textarea>默认值</textarea>    有name属性
-            select标签       有name属性，内部有option value，size多行显示，multiple可选中多行
+        
+		<textarea>默认值</textarea>    有name属性
+        select标签       有name属性，内部有option value，size多行显示，multiple可选中多行
         a标签（不提交到后台）
             使用场景：
             （1）超链接，实现调转
@@ -93,8 +94,6 @@
         不存在那种方式更安全之说。
     需要记忆20个标签左右
     
-
-
 ----------
 ## CSS  衣着 ##
     颜色、位置
@@ -226,8 +225,6 @@
 	    background-position: 0 -59px;   分别表示x轴、y轴
 	9 background    简写方式，有利于避免代码重复编写
     	background: red url(chouti.png) 0 -60px no-repeat; 背景色 图标来源 x轴 y轴 不重复 
-
-
 
 ----------
 ## JS   动态属性   
