@@ -45,7 +45,8 @@
             方便定位、操作；CSS操作；JS操作
         chrome审查元素
             方便定位和查看样式
-        input系列 + form标签
+    8  input系列 
+			一般结合form标签，一起使用
             type="text"     有name、value属性，placeholder属性（信息提示）
             type="password" 有name、value属性 
             type="button"   有value属性
@@ -54,18 +55,27 @@
             type="checkbox" 有value、checked（可多个）、name属性（name可用于批量获取数据）
             type="file"     依赖form表单中的enctype="multipart/form-data"属性
             type="reset"    重置
+	9 form标签
+		生成表单
+		action 指定URL
+		method 指定交互模式，一般是post和get
         
-		<textarea>默认值</textarea>    有name属性
-        select标签       有name属性，内部有option value，size多行显示，multiple可选中多行
-        a标签（不提交到后台）
+	10	<textarea>默认值</textarea>    有name属性
+    11    select标签       
+		有name属性，内部有option value，size多行显示
+		multiple可选中多行
+
+    12   a标签（不提交到后台）
             使用场景：
             （1）超链接，实现调转
             （2）锚，锚点 href="#某标签的ID" 注：标签ID不可重复
-        img标签属性：
+			target="_blank" 在新标签页中打开链接
+
+    13   img标签属性：
             src     图片来源
             title   提示
             alt     图片找不到时的提示字符
-        列表标签
+    14   列表标签
             ul  标点模式
                 li 
             ol  数字模式
@@ -73,7 +83,7 @@
             dl
                 dt  标题
                 dd  内容
-        table表格标签
+    15   table表格标签
            thead    表头
                 tr  行
                     th  列
@@ -82,16 +92,12 @@
                     td  列
            colspan='n'  行内合并n个单元格
            rowspan='n'  跨行合并n个单元格
-        label标签
+    16   label标签
             点击文字时，使关联的id的标签，获取光标
             一般配合input标签使用 
-        fieldset标签
+    17    fieldset标签
             legend 生成边框
-    8 get方法与post方法的区别
-    （1）get方法将输入的内容，填充到url中，url上内看到填写内容，再发放到服务端；
-        post方法将输入内容，填充到body中，再发放到服务端。
-    （2）get方法和post方法传输的内容，都可以通过抓包方式，获取内容，
-        不存在那种方式更安全之说。
+   
     需要记忆20个标签左右
     
 ----------
