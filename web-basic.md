@@ -61,9 +61,17 @@
 		method 指定交互模式，一般是post和get
         
 	10	<textarea>默认值</textarea>    有name属性
-    11    select标签       
+    11  select标签
+		作用：生成下拉框 
+      
 		有name属性，内部有option value，size多行显示
 		multiple可选中多行
+		例如：
+			<select name="group_id">
+	            <option value="1">DB</option>
+	            <option value="2">QA</option>
+	            <option value="3">MQ</option>
+	        </select>
 
     12   a标签（不提交到后台）
             使用场景：
