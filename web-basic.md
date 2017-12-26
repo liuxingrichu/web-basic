@@ -57,8 +57,11 @@
             type="reset"    重置
 	9 form标签
 		生成表单
-		action 指定URL
-		method 指定交互模式，一般是post和get
+		使用场景：提交数据
+		特性：提交后，页面会刷新
+		参数：
+			action 指定URL
+			method 指定交互模式，一般是post和get
         
 	10	<textarea>默认值</textarea>    有name属性
     11  select标签
